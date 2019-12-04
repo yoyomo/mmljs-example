@@ -1,0 +1,38 @@
+{
+  "name": "mmljs-example",
+  "version": "1.0.0",
+  "description": "Live example for MML JS library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoyomo/mmljs-example.git"
+  },
+  "keywords": [
+    "mml",
+    "example"
+  ],
+  "author": "Armando J. Ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoyomo/mmljs-example/issues"
+  },
+  "homepage": "https://github.com/yoyomo/mmljs-example#readme",
+  "dependencies": {
+    "@types/muvjs": "file:types-muvjs-2.3.0-beta.0.tgz",
+    "mmljs": "file:mmljs-1.0.0.tgz",
+    "muvjs": "file:muvjs-2.3.0-beta.0.tgz",
+    "typescript": "^3.7.3",
+    "ts-loader": "^6.2.1"
+  },
+  "devDependencies": {
+
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
