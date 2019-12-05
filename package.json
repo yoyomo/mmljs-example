@@ -24,7 +24,7 @@
   "homepage": "https://github.com/yoyomo/mmljs-example#readme",
   "dependencies": {
     "@types/muvjs": "file:types-muvjs-2.3.0-beta.0.tgz",
-    "mmljs": "file:mmljs-1.0.0.tgz",
+    "mmljs": "file:mmljs-1.0.0-beta.0.tgz",
     "muvjs": "file:muvjs-2.3.0-beta.0.tgz",
     "lodash": "^4.17.15",
     "ts-loader": "^6.2.1",

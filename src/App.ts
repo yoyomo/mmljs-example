@@ -4,15 +4,17 @@ import {button, div, textarea} from "muvjs/muv-dom";
 import {MML} from "mmljs";
 import {Compressed} from "./mml-files/compressed";
 
-MML.initialize();
+window.onload = function() {
+  MML.initialize();
 
-const allText = Compressed.mml;
-MML.readMML(allText.replace(/[\n ]/g, ''));
+  const allText = Compressed.mml;
+  MML.readMML(allText.replace(/[\n ]/g, ''));
 
-const mml = MML.writeToMML();
+  // const mml = MML.writeToMML();
+};
 
 export const model = {
-  mml: mml
+  mml: Compressed.mml
 };
 
 export type Model = typeof model;
@@ -52,7 +54,8 @@ export const update = (model: Model) => (action: Action) => {
       break;
 
     case "play-mml":
-      MML.playMML();
+      MML.readMML(model.mml.replace(/[\n ]/g, ''));
+      MML.play();
       break;
   }
 
@@ -71,7 +74,7 @@ export const view = (dispatch: (a: Action) => void) => (model: Model) => {
     return (
       div()([
         , textarea({oninput: dispatcher.changeMMLText})(model.mml)
-        , button()('Play')
+        , button({onclick: dispatcher.playMML})('Play')
       ])
     )
   }
