@@ -4,7 +4,7 @@
     "alwaysStrict": true,
     "strict": true,
     "module": "es6",
-    "target": "es6",
+    "target": "es5",
     "noImplicitAny": true,
     "strictNullChecks": true,
     "noUnusedLocals": false,
@@ -17,7 +17,11 @@
       "dom"
     ],
     "noEmit": false,
-    "declaration": true
+    "declaration": true,
+    "allowJs": true,
+    "checkJs": true,
+    "baseUrl": "types",
+    "typeRoots": ["types"]
   },
   "include": [
     "src/**/*.ts"
