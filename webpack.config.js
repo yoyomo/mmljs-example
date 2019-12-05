@@ -1,5 +1,5 @@
 const path = require('path');
-const outputPath = path.resolve(__dirname, './dist');
+const outputPath = path.resolve(__dirname, './docs');
 
 module.exports = {
   mode: 'development',
