@@ -17,7 +17,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [ '.ts', '.js', '.d.ts' ],
+    extensions: [ '.ts', '.js', '.d.ts', '.mjs' ],
   },
   devServer: {
     contentBase: outputPath

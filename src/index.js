@@ -8,5 +8,5 @@ import { model, update, view } from "./App";
 // const mml = MML.writeToMML();
 // const root = document.querySelector('#root');
 // if(root) root.innerHTML = mml;
-muv({ model, update, view });
+muv({ model: model, update: update, view: view });
 //# sourceMappingURL=index.js.map

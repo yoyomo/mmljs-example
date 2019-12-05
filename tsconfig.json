@@ -19,7 +19,7 @@
     "noEmit": false,
     "declaration": true,
     "allowJs": true,
-    "checkJs": true,
+//    "checkJs": true,
     "baseUrl": "types",
     "typeRoots": ["types"]
   },
