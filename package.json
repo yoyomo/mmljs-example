@@ -26,7 +26,7 @@
     "@types/muvjs": "file:types-muvjs-2.3.0-beta.0.tgz",
     "mmljs": "file:mmljs-1.0.0-beta.0.tgz",
     "muvjs": "file:muvjs-2.3.0-beta.0.tgz",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.2"
   },
